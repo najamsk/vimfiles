@@ -36,10 +36,12 @@ noremap <silent> <C-7> <C-W>>
 noremap <silent> <C-8> <C-W>+
 noremap <silent> <C-9> <C-W>+
 noremap <silent> <C-0> <C-W>>
-
+noremap <silent> ,_ <C-W>_<C-W><bar>
 
 " Highlight all instances of the current word under the cursor
 nmap <silent> ^ :setl hls<CR>:let @/="<C-r><C-w>"<CR>
+set omnifunc=csscomplete#CompleteCSS
+set fdm=manual
 
 "-----------------------------------------------------------------------------
 " NERD Tree Plugin Settings
@@ -495,7 +497,7 @@ noremap <S-Del> <Del>
 
 "unsorted
 "set foldclose=all
-set fdm=marker
+"set fdm=marker
 let b:asmsyntax="nasm"
 
 " Type %/ in the command line to expand out to the current buffer's file
@@ -513,7 +515,7 @@ let g:miniBufExplUseSingleClick = 1
 
 
 " Color Scheme
-colorscheme vj
+colorscheme maroloccio2
 set cmdheight=2
 " -----------------------------------------------------------
 " Custom settings
